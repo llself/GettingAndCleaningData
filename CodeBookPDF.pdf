@@ -1,0 +1,75 @@
+---
+output: pdf_document
+---
+This provides a CodeBook for the run_Analysis.R script.  For details on the steps I performed and my reason for performing them, please see the README.md file in the github repository.  
+
+WearableComputingTidyDS - dataset that represents subject data for wearable computing.  This is a tidy dataset that captures all variables.
+  679,734 rows, 4 columns
+    1. Activity - factor variable with 6 values representing the type of activity user is performing while wearing a wearable computing device:
+         Values:
+          LAYING
+          SITTING
+          STANDING
+          WALKING
+          WALKING_DOWNSTAIRS
+          WALKING_UPSTAIRS
+    2. SubjectID - integer variable with 30 values, each integer representing a person that took part in the study.
+        Values:
+          1
+          2
+          3
+          4
+          5
+          6
+          ...
+          28
+          29
+          30
+    3. Domain - character variable representing whether the individual is capturing time or frequency of activity being performed:
+        Values:
+          Time
+          Frequency  
+    4. Signal Type - character variable representing type of motion/work captured during activity. 
+        Values:
+          BodyAcc
+          BodyAccJerk
+          BodyAccJerkMag
+          BodyAccMag
+          BodyBOdyGyroJerkMag
+          BodyBodyGyroMag
+          BodyGyro
+          BodyGyroJerk
+          BodyGyroJerkMag
+          BodyGyroMag
+          GravityAcc          
+          GravityAccMag
+    5.  Calculation - character variable representating type of calculation on measure
+          Values:
+            Mean - mean
+            std - standard deviation
+    6.  value - this is the measure being calculated for the subject doing this activity in this domain and single type
+          
+          
+          
+ MeanEachActivitybySubjectDS - is a dataset that produces the mean of each activity by subject.     
+    1.  SubjectID - integer variable with 30 values, each integer representing a person that took part in the study.
+        Values:
+          1
+          2
+          3
+          4
+          5
+          6
+          ...
+          28
+          29
+          30
+    2.  LAYING - numeric value represent the mean value for each subject while they were laying down.
+    3.  SITTING - numeric value representing the mean value for each subject while they were sitting down.
+    4.  STANDING - numeric value representing the mean value for each subject while they were standing.
+    5.  WALKING - numeric value representing the mean value for each subject while they were walking.
+    6.  WALKING_DOWNSTAIRS - numeric value representing the mean value for each subject while they were walking down steps.
+    7.  WALKING_UPSTAIRS - numeric value representing the mean value for each subject while they were walking up steps.
+ 
+
+
