@@ -83,6 +83,3 @@ WearableComputingMeltedDS <- melt(WearableComputingDS, id=c("Activity", "Subject
 # the third for calculation type (std = standard deviation or mean) and lastly, Axis, which tell me which axis was calculated (x,y, z or NA)
 WearableComputingTidyDS <- separate(WearableComputingMeltedDS, variable, c("Domain", "SignalType", "Calculation", "Axis"))
 
-
-#Provides a dataframe that takes the Tidy dataset and gives us the mean of each Subject by Activity
- MeanEachActivitybySubjectDS<- as.data.frame(dcast(WearableComputingTidyDS, SubjectID ~ Activity, mean))
