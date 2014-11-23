@@ -70,6 +70,3 @@ the second list is derived from the second grep function where it is looking for
 8.  Now that I have the true Activity Types in, I can melt my data.  In other words, take all those values that start with Time or Frequency and make the column name a value in one column and the measurement to be in one column called value.  See line 77 of the run_Analysis.R script.  
 
 9.  Once I have the dataset melted down and assign that to a new dataset name of WearableComputingMeltedDS, I can now take that new column that contains all of the old column names and split those into four columns depicting the characteristic of that measurement by using the separate function, and applying that change to a new dataset called, WearableComputingTidyDS.  See line 82 of the run_Analysis.R script.  THIS dataset provides me my tidy dataset!
-
-10.  Lastly, I am taking my tidy dataset and providing a new dataset, called MeanEachActivitybySubjectDS, that provides the mean of the measures for each Activity by the Subject.  See line 85 of the run_Analysis.R script.
-

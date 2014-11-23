@@ -50,26 +50,6 @@ WearableComputingTidyDS - dataset that represents subject data for wearable comp
     6.  value - this is the measure being calculated for the subject doing this activity in this domain and single type
           
           
-          
- MeanEachActivitybySubjectDS - is a dataset that produces the mean of each activity by subject.     
-    1.  SubjectID - integer variable with 30 values, each integer representing a person that took part in the study.
-        Values:
-          1
-          2
-          3
-          4
-          5
-          6
-          ...
-          28
-          29
-          30
-    2.  LAYING - numeric value represent the mean value for each subject while they were laying down.
-    3.  SITTING - numeric value representing the mean value for each subject while they were sitting down.
-    4.  STANDING - numeric value representing the mean value for each subject while they were standing.
-    5.  WALKING - numeric value representing the mean value for each subject while they were walking.
-    6.  WALKING_DOWNSTAIRS - numeric value representing the mean value for each subject while they were walking down steps.
-    7.  WALKING_UPSTAIRS - numeric value representing the mean value for each subject while they were walking up steps.
  
 
 
