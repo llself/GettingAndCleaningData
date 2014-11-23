@@ -52,7 +52,7 @@ Therfore, I ended up with a long tidy dataset that includes columns like Activit
 
 ##Steps I performed
 
-1.  I brought in 8 datasets.  Three of these datas regarding the train folders and three with respect to the test folders. The last two datasets brought in the column names for the main dataset and brought in the activitylabels that represented the type of activity.  I.e. 1 - Walking, 2, Walking_Upstairs.   This is depicted in lines 16-23 of the run_Analysis.R script.  Once I brought them all in, I made sure the column names were added. See lines 26-32 of run_Analyis.R script.
+1.  I brought in 8 datasets.   Once you download your file from the internet, I went in and took al the files/folders under UCI HAR Dataset up to under projectAssignment2 and removed that UCI HAR Dataset folder.  Three of these datas regarding the train folders and three with respect to the test folders. The last two datasets brought in the column names for the main dataset and brought in the activitylabels that represented the type of activity.  I.e. 1 - Walking, 2, Walking_Upstairs.   This is depicted in lines 16-23 of the run_Analysis.R script.  Once I brought them all in, I made sure the column names were added. See lines 26-32 of run_Analyis.R script.
 
 2.  Now that I have all the data in R, I need to start merging the data in a fashion that keeps the integrity, so that we are matching datasets correctly.  As such, I column bind the three test datasets together into one dataset called testDS.  See line 35 of run_Analysis.R script. Then I repeat that column binding for the train datasets called trainDS.  See line 36 of the run_Analysis.R script. So each dataset has the subjectID, the ActivityType, and then all the measures in the original dataset all together.
 
